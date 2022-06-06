@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
-@media screen and (max-width:1000px) {
-    .box-1 img {
-        display: none;
-    }    
-
-    .box-1,
-    .box-2 h2 {
-        text-align: center;
-    }
-
-    .button-solid {
-        align-self: center;
-    }
-
-    .box-2-text {
-        flex-wrap: wrap;
-    }
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -153,6 +134,59 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    background-color: #f9faf8;
+    color: #1f2937;
+}
+
 .button-borderWhite {
     border-color: #f9faf8;
 }
+
+@media screen and (max-width:1000px) {
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header-links {
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+
+    .box-1 img {
+        display: none;
+    }    
+
+    .box-1,
+    .box-2 {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .box-1 h1 {
+        align-self: center;
+    }
+
+    .button-solid {
+        align-self: center;
+    }
+
+    .box-2-text {
+        flex-wrap: wrap;
+    }
+
+    .box-3 {
+        padding: 50px;
+    }
+
+    .box-4 {
+        margin: 10px 5px 100px;
+        gap: 10px;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
+
